@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">
+        Result
+    </h1>
+    <div class="w-full max-w-md bg-gray-900 p-6 rounded-lg shadow-md">
+        <div id="responseDiv" class="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
+        <p id="result" class="mt-2 break-words">{{ result }}</p>
+        </div>
+        <div class="mt-6">
+            <button
+            onclick="location.reload()"
+            class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+            Start Over
+            </button>
+        </div>
+    </div>
+{% endblock %}
