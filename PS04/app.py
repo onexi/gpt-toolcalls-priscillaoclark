@@ -1,7 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from main import main
-from flask import request
-
 app = Flask(__name__)
 
 @app.route('/')
