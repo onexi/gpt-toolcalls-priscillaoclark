@@ -1,8 +1,12 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/9wDnMTRl)
 
-# MBTA Train Schedule Application
+# MBTA Train Schedule Application (PS04)
 
-This project is a Flask-based web application that provides train schedule information using data from the MBTA (Massachusetts Bay Transportation Authority). The application accepts user input, interacts with backend Python scripts, and displays train schedule data on the frontend.
+This project is a Flask-based web application that provides train schedule information using data from the MBTA (Massachusetts Bay Transportation Authority). The application accepts user input, interacts with backend Python scripts, and displays train schedule data on the frontend, along with the expected weather at the destination. 
+
+The application leverages OpenAI API tool calling to return a JSON with structured fields from the user's query. The JSON is used to pass parameters into the getTrain.py function. The JSON result of the function from the MBTA API is passed back to OpenAI for interpretation. 
+
+A secondary tool call leverages the latitude, longitude and expected arrival time to tell the user what weather to expect when they get to their destination.
 
 ## Project Structure
 
