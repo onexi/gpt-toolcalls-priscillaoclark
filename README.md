@@ -16,6 +16,10 @@ This project is a Flask-based web application that provides train schedule infor
 
 The project dependencies are listed in `requirements.txt`. Ensure you have Python 3.x installed on your system before proceeding.
 
+## API Keys
+
+Keys for the MBTA and OpenAI APIs have been added as secrets into the codespaces settings for this repository.
+
 ## Setup
 
 1. Ensure python extension is installed in codespaces.
