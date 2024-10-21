@@ -4,6 +4,7 @@
     "express": "^4.21.0",
     "fs": "^0.0.1-security",
     "openai": "^4.67.2",
+    "openmeteo": "^1.1.4",
     "path": "^0.12.7",
     "purl": "^1.0.4"
   },
