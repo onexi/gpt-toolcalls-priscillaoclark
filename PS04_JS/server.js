@@ -144,7 +144,7 @@ app.post('/api/prompt', async (req, res) => {
     // just update the state with the new prompt
     state = req.body;
     try {
-        res.status(200).json({ message: `got prompt ${state.user_message}`, "state": state });
+        res.status(200).json({ message: `You asked: ${state.user_message}`, "state": state });
     }
     catch (error) {
         console.log(error);
